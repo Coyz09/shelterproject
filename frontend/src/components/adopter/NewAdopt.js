@@ -25,7 +25,7 @@ const NewAdopt = () => {
 
      const fetchUser = async () =>
      {
-        const apiCall = await fetch(`http://localhost:4000/api/v1/adopter/user/me`);
+        const apiCall = await fetch(`https://shelterproject.herokuapp.com/api/v1/adopter/user/me`);
         const users = await apiCall.json();
          setName(users.user.name);
          setEmail(users.user.email);
