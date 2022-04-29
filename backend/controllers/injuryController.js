@@ -1,4 +1,4 @@
-const Injury = require('../models/Injury')
+const Injury = require('../models/injury')
 const ErrorHandler = require('../utils/errorHandler')
 const APIFeatures = require('../utils/apiFeatures');
 const catchAsyncErrors = require('../middlewares/catchAsyncErrors');

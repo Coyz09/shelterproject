@@ -1,4 +1,4 @@
-const Animal = require('../models/Animal')
+const Animal = require('../models/animal')
 const ErrorHandler = require('../utils/errorHandler')
 const APIFeatures = require('../utils/apiFeatures');
 const catchAsyncErrors = require('../middlewares/catchAsyncErrors');

@@ -1,4 +1,4 @@
-const Adopter = require('../models/Adopter')
+const Adopter = require('../models/adopter')
 const User = require('../models/user');
 const ErrorHandler = require('../utils/errorHandler')
 const APIFeatures = require('../utils/apiFeatures');
