@@ -5,12 +5,12 @@ const cloudinary = require('cloudinary');
 // const cors=require("cors");
 const path = require('path')
 
-// const dotenv = require('dotenv');
+const dotenv = require('dotenv');
 
-// dotenv.config({path: 'backend/config/config.env'})
+dotenv.config({path: 'backend/config/config.env'})
 
-if (process.env.NODE_ENV !== 'PRODUCTION') 
-    require('dotenv').config({ path: 'backend/config/config.env' })
+if (process.env.NODE_ENV !== 'PRODUCTION')
+	require('dotenv').config({ path: 'backend/config/config.env' })
 
 process.on('uncaughtException', err => {
     console.log(`ERROR: ${err.stack}`);

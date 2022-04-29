@@ -12,7 +12,7 @@ const corsOptions ={
    optionSuccessStatus:200,
 }
 
-// const dotenv = require('dotenv');
+const dotenv = require('dotenv');
 if (process.env.NODE_ENV !== 'PRODUCTION') 
     require('dotenv').config({ path: 'backend/config/config.env' })
 
@@ -35,6 +35,7 @@ app.use('/api/v1', personnels);
 app.use('/api/v1', adopters);
 app.use('/api/v1', animals);
 app.use('/api/v1', auth);
+
 if (process.env.NODE_ENV === 'PRODUCTION') {
     app.use(express.static(path.join(__dirname, '../frontend/build')))
 
